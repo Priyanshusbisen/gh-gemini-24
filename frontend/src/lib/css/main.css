@@ -1,0 +1,81 @@
+:root {
+    --clr-1: rgb(223, 201, 201);
+    --clr-2: rgb(43, 38, 57);
+    --clr-3: rgb(25, 25, 46);
+    --clr-4: rgb(146, 44, 59);
+    --clr-5: rgb(48, 45, 77);
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: var(--clr-1);
+    background-color: var(--clr-5);
+    align-items: center;
+}
+
+header, footer, main {
+    min-width: 100%;
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--clr-2);
+}
+
+header {
+    height: 11vh;
+}
+
+main{
+    height: 84vh;
+}
+
+
+nav {
+    position: absolute;
+    margin-left: .7rem;
+    top: calc(.5 * .6 * 84vh);
+    height: calc(.6 * 84vh);
+    border-radius: .4rem;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+nav {
+    width: 5%;
+    background-color: var(--clr-3);
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+    grid-template-rows: max-content;
+    padding: none;
+    margin: none;
+}
+
+footer {
+    height: 5vh;
+    flex: 0;
+    position: absolute;
+    bottom: 0%;
+}
+
+dialog {
+    border: 2px solid var(--clr-4);
+    background-color: var(--clr-2);
+    width: 50vh;
+    height: calc(0.618 * 40vw);
+    border-radius: .4rem;
+}
+
+/* development code */
+.debug {
+    border: 2px solid red;
+}
